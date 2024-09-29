@@ -2,6 +2,8 @@
 
 ## Demo
 
+![KMeans Clustering Visualizer](https://i.gyazo.com/fea9be841df1375055f5520a6a57b394.png)
+
 A demo video is provided in the repository under the `assign-02.mp4` file. [Watch the Demo](./assign-02.mp4)
 
 ## Overview
@@ -64,7 +66,3 @@ You can quickly set up the project using the provided `Makefile`.
 4. Click **Initialize Clustering** to start the algorithm.
 5. Step through each iteration or run the algorithm to convergence.
 6. View the clustering results on the generated graph.
-
-
-## Folder Structure
-

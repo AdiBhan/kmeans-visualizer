@@ -1,0 +1,44 @@
+name: CI - KMeans Clustering Webpage
+
+on:
+  push:
+    branches:
+      - main
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    # Step 1: Checkout the repository
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    # Step 2: Set up Python environment
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.x'
+
+    # Step 3: Set up Node.js environment
+    - name: Set up Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: '16.x'
+
+    # Step 4: Install frontend and backend dependencies
+    - name: Install dependencies (Makefile)
+      run: make install
+
+    # Step 5: Run the application (sleep ensures it stays running for testing)
+    - name: Run the application
+      run: |
+        make run &
+        sleep 5
+
+    # Step 6: Verify server is running 
+    - name: Check if frontend is running
+      run: curl --fail http://localhost:3000 || exit 1

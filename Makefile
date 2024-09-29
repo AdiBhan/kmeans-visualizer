@@ -3,8 +3,8 @@ CLIENT_DIR=client
 SERVER_DIR=server
 
 # Define commands
-PIP=pip
-PYTHON=python
+PIP=pip3
+PYTHON=python3
 NPM=npm
 
 # Install all dependencies for frontend and backend

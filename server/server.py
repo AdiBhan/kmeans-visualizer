@@ -179,8 +179,8 @@ def generate_plot():
     # Plot data points colored by their cluster assignment
     for cluster_id in range(len(centroids)):
         cluster_points = dataset[pd.Series(assignments) == cluster_id]
-        plt.scatter(cluster_points['x'], cluster_points['y'], label=f'Cluster {
-                    cluster_id + 1}')
+        plt.scatter(cluster_points['x'], cluster_points['y'], label=f'Cluster {cluster_id + 1}')
+
 
     # Plot centroids
     centroid_array = np.array(centroids)
