@@ -1,8 +1,8 @@
 # KMeans Clustering Algorithm Visualizer
 
-## Demo
-
 ![KMeans Clustering Visualizer](https://i.gyazo.com/fea9be841df1375055f5520a6a57b394.png)
+
+## Demo
 
 A demo video is provided in the repository under the `assign-02.mp4` file. [Watch the Demo](./assign-02.mp4)
 
